@@ -7,7 +7,7 @@
 extern QString usernames[100];
 extern QString passwords[100];
 extern int ages[100];
-//th usersCount int is for current number of users: initally 0
+// the usersCount int is for current number of users: initally 0
 extern int usersCount;
 
 
