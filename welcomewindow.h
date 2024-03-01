@@ -14,6 +14,7 @@ class WelcomeWindow : public QMainWindow
 public:
     explicit WelcomeWindow(QWidget *parent = nullptr);
     ~WelcomeWindow();
+    void setWelcomeMessage(int userIndex);
 
 private:
     Ui::WelcomeWindow *ui;
