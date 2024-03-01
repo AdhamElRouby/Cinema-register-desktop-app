@@ -14,6 +14,7 @@ SOURCES += \
     welcomewindow.cpp
 
 HEADERS += \
+    Users.h \
     loginwindow.h \
     welcomewindow.h
 
