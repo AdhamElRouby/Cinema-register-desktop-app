@@ -1,5 +1,6 @@
 #include "welcomewindow.h"
 #include "ui_welcomewindow.h"
+#include "loginwindow.h"
 #include "Users.h"
 #include <QPixmap>
 
@@ -20,3 +21,11 @@ WelcomeWindow::~WelcomeWindow()
 void WelcomeWindow::setWelcomeMessage(int userIndex) {
     ui->welcome_msg->setText("Hello " + usernames[userIndex] + " " + QString::number(ages[userIndex]) + "!");
 }
+
+void WelcomeWindow::on_logout_button_clicked()
+{
+    hide();
+    LoginWindow* loginWindow = new LoginWindow(this);
+    loginWindow->show();
+}
+

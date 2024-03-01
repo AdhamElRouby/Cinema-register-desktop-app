@@ -16,6 +16,9 @@ public:
     ~WelcomeWindow();
     void setWelcomeMessage(int userIndex);
 
+private slots:
+    void on_logout_button_clicked();
+
 private:
     Ui::WelcomeWindow *ui;
 };
