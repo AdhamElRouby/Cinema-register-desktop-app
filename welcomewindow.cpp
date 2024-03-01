@@ -1,5 +1,6 @@
 #include "welcomewindow.h"
 #include "ui_welcomewindow.h"
+#include "Users.h"
 #include <QPixmap>
 
 WelcomeWindow::WelcomeWindow(QWidget *parent)
@@ -14,4 +15,8 @@ WelcomeWindow::WelcomeWindow(QWidget *parent)
 WelcomeWindow::~WelcomeWindow()
 {
     delete ui;
+}
+
+void WelcomeWindow::setWelcomeMessage(int userIndex) {
+    ui->welcome_msg->setText("Hello " + usernames[userIndex] + " " + QString::number(ages[userIndex]) + "!");
 }
