@@ -24,12 +24,6 @@ void LoginWindow::on_register_button_clicked()
     registerWindow->show();
 }
 
-int findUserIndex(QString username) {
-    for(int i = 0; i < usersCount; i++)
-        if(usernames[i] == username) return i;
-    return -1;
-}
-
 void LoginWindow::on_login_button_clicked()
 {
     QString username = ui->edit_username->text();
