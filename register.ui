@@ -489,7 +489,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="fefmale_radio">
+      <widget class="QRadioButton" name="female_radio">
        <property name="text">
         <string>Female</string>
        </property>
@@ -521,14 +521,14 @@
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
      <item>
-      <widget class="QRadioButton" name="radioButton_5">
+      <widget class="QRadioButton" name="admin_radio">
        <property name="text">
         <string>Admin</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_6">
+      <widget class="QRadioButton" name="user_radio">
        <property name="text">
         <string>User</string>
        </property>
@@ -631,10 +631,10 @@
   <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>31</x>
-     <y>481</y>
+     <x>30</x>
+     <y>480</y>
      <width>221</width>
-     <height>22</height>
+     <height>31</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_4">
