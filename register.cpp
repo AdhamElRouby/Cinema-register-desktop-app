@@ -1,5 +1,7 @@
 #include "register.h"
 #include "ui_register.h"
+#include "Users.h"
+#include "welcomewindow.h"
 
 Register::Register(QWidget *parent)
     : QDialog(parent)
@@ -56,9 +58,41 @@ void Register::on_register_button_clicked()
 
     // code to verify the username and password
 
+        QString username = ui->register_userLineEdit->text();
+        QString password = ui->Register_passLineEdit->text();
+        QString repassword = ui->Register_retypeLineEdit->text();
+        int userIndex = findUserIndex(username);
+        if(userIndex == -1) {
+
+        }
+        //checking if username is already exist
+        if(username == usernames[userIndex]) {
+            isErr = true;
+            ui->username_err->setVisible(true);
+
+        }
+        //checking if password is identical
+        if(!(repassword==password)) {
+            isErr = true;
+            ui->password_err->setVisible(true);
+        }
+
+
+
+
+
 
     // code after verifying all possible errors
     if(!isErr) {
         // code to add the new username, passowrd, and age + open the welcome window
+            addNewUser(username);
+            addNewPass(password);
+            addAge(userAge);
+
+            hide();
+            WelcomeWindow* welcomeWindow = new WelcomeWindow(this);
+            welcomeWindow->show();
+            welcomeWindow->setWelcomeMessage(usersCount-1);
+
     }
 }

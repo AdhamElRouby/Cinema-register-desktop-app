@@ -9,3 +9,20 @@ int findUserIndex(QString username) {
         if(usernames[i] == username) return i;
     return -1;
 }
+
+void addNewUser(QString username)
+{
+    usersCount++;
+    usernames[usersCount-1]= username;
+
+}
+
+void addNewPass(QString password)
+{
+    passwords[usersCount-1]= password;
+}
+
+void addAge(int age)
+{
+    ages[usersCount-1]= age;
+}
