@@ -628,7 +628,7 @@
     <string>* Age is less than 12</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -676,83 +676,84 @@
   <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>22</x>
-     <y>30</y>
-     <width>351</width>
+     <x>23</x>
+     <y>31</y>
+     <width>301</width>
      <height>81</height>
     </rect>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
-     <layout class="QFormLayout" name="formLayout">
-      <item row="0" column="0">
-       <widget class="QLabel" name="Register_usernamelabel">
-        <property name="text">
-         <string>Username</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="register_userLineEdit"/>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="Register_passwordlabel">
-        <property name="text">
-         <string>Password</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QLineEdit" name="Register_passLineEdit">
-        <property name="echoMode">
-         <enum>QLineEdit::Password</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="Register_retypelabel">
-        <property name="text">
-         <string>Re-type password</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QLineEdit" name="Register_retypeLineEdit">
-        <property name="echoMode">
-         <enum>QLineEdit::Password</enum>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
-      <property name="spacing">
-       <number>25</number>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="Register_usernamelabel">
+      <property name="text">
+       <string>Username</string>
       </property>
-      <item>
-       <widget class="QLabel" name="username_err">
-        <property name="styleSheet">
-         <string notr="true">color: red;	</string>
-        </property>
-        <property name="text">
-         <string>* Already Existing</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="password_err">
-        <property name="styleSheet">
-         <string notr="true">color: red;	</string>
-        </property>
-        <property name="text">
-         <string>* Not Matching</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="register_userLineEdit"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="Register_passwordlabel">
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="Register_passLineEdit">
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="Register_retypelabel">
+      <property name="text">
+       <string>Re-type password</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="Register_retypeLineEdit">
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QLabel" name="username_err">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>30</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: red;	</string>
+   </property>
+   <property name="text">
+    <string>* Already Existing</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="password_err">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>80</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: red;	</string>
+   </property>
+   <property name="text">
+    <string>* Not Matching</string>
+   </property>
   </widget>
  </widget>
  <resources/>
